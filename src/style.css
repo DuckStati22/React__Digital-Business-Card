@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+:root {
+  --main-bg-color: #1A1B21;
+  --footer-bg-color: #161619;
+  --title-text-color: #FFFFFF;
+  --subtitle-text-color: #F3BF99;
+  --section__title-text-color: #F5F5F5;
+  --para-text-color: #DCDCDC;
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #23252C;
+  padding-top: 20px;
+}
+
+.container {
+  max-width: 317px;
+  margin: 0 auto;
+}
+
+.photo__image {
+  width: 100%;
+}
+
+
+.main {
+  margin-top: -4px;
+  background-color: var(--main-bg-color);
+  padding: 1.25rem 35px;
+}
+.main__titles-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__title {
+  color: var(--title-text-color);
+  font-size: 1.55rem;
+  
+}
+.main__subtitle {
+  color: var(--subtitle-text-color);
+  margin-top: 0.375rem;
+  font-size: 0.8rem;
+}
+.main__link {
+  display: block;
+  color: var(--section__title-text-color);
+  font-size: 0.64rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.main__link:hover {
+  box-shadow: 0 2px var(--subtitle-text-color);
+}
+.main__button {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  width: 100%;
+  background-color: var(--title-text-color);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  padding: 0.56rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.main__button:hover {
+  background-color: var(--subtitle-text-color);
+}
+.main__section {
+  margin-top: 2rem;
+}
+.main__section-title {
+  color: var(--section__title-text-color);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.main__para {
+  color: var(--para-text-color);
+  font-size: 0.64rem;
+  line-height: 1.5;
+  margin-top: 0.3125rem;
+  margin-bottom: 1.5rem;
+}
+.main__para:last-child {
+  margin-bottom: 0;
+}
+
+
+.footer {
+  min-height: 64px;
+  background-color: var(--footer-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.footer__logo {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.footer__logo > svg:hover > path {
+  fill: var(--subtitle-text-color);
+  transition: all 0.5s ease-out;
+}
